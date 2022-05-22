@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -52,13 +54,56 @@
                     <form>
                         <div class="row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="url" placeholder="Enter IP address..."></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit">Lookup</button></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit" id="hero2">Lookup</button></div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </header>
+
+
+<section id="scrollpoint2"></section>
+    <section class="hidden-section" id="section2">
+        <div class="hidden-content">
+            
+            <h3 class="hidden-title">Lookup of 212.34.251.66</h3>
+            <div class="hidden-container">
+                <div class="color-box">
+                    <p class="lead mb-0">
+                    IP address: 212.34.251.66<br>
+                    Address type: IPv4<br>
+                    Hostname: host-66.251.34.212.ucom.am<br>
+                    Country: Armenia<br>
+                    Hexadecimal: 0xD422FB42<br>
+                    Dotted hex: 0xD4.0x22.0xFB.0x42<br>
+                    Decimal: 3559062338<br>
+                    Octal: 0324.0042.0373.0102<br>
+                    Binary: 11010100.00100010.11111011.01000010<br>
+                    </p>
+                </div>
+            </div>    
+
+            <h3 class="hidden-title">Neighbouring IP addresses</h3>
+            <div class="hidden-container">
+                <div class="color-box">
+                    <p class="lead mb-0">
+                    212.34.186.8<br>
+                    212.34.231.214<br>
+                    212.34.241.238<br>
+                    212.34.245.181<br>
+                    212.34.250.14<br>
+                    212.35.0.53<br>
+                    212.35.64.194<br>
+                    212.35.64.195<br>
+                    212.35.65.148<br>
+                    212.35.65.149<br>
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
     <section class="text-center bg-light features-icons">
         <div class="container">
             <div class="row">
@@ -184,6 +229,24 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+
+          $("#hero2").click(function(event){
+            event.preventDefault();
+
+            $('html, body').animate({
+                    scrollTop: $("#scrollpoint2").offset().top
+                }, 100);
+
+            $("#section2").slideDown();
+          });
+
+
+        });
+
+
+    </script>
 </body>
 
 </html>

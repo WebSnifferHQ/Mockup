@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,43 +57,61 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Your browser's information</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-crosshairs icon"></i>
-                        <h3 class="name">IP Address: 214.145.13.21</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <h3 class="name">Your IP Address<br><br>214.145.13.21</h3>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name">Location: Zug, Switzerland</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <h3 class="name">Your Location<br><br>Zug, Switzerland</h3>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-user icon"></i>
-                        <h3 class="name">User-Agent: Chrome</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <h3 class="name">Your User-Agent<br><br>Chrome</h3>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-header icon"></i>
-                        <h3 class="name">Hostname: h9324.telco.ch</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <h3 class="name">Hostname<br><br>h9324.telco.ch</h3>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-random icon"></i>
-                        <h3 class="name">Referrer: (empty)</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <h3 class="name">Referrer<br><br>https://websniffer.cc/</h3>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="width: 100%;">
                     <div class="box"><i class="fa fa-tasks icon"></i>
                         <h3 class="name">Request Header</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                        <p class="description" style="word-break: break-all; text-align: left;">
+                            Host: websniffer.cc<br>
+                            Connection: Keep-Alive<br>
+                            Accept-Encoding: gzip<br>
+                            CF-IPCountry: AM<br>
+                            X-Forwarded-For: 212.34.251.66<br>
+                            CF-RAY: 70f4481a7b4a7d2d-EVN<br>
+                            X-Forwarded-Proto: https<br>
+                            CF-Visitor: {"scheme":"https"}<br>
+                            sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"<br>
+                            sec-ch-ua-mobile: ?0<br>
+                            sec-ch-ua-platform: "Windows"<br>
+                            upgrade-insecure-requests: 1<br>
+                            user-agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/<br>101.0.4951.67 Safari/537.36<br>
+                            accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/<br>apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9<br>
+                            sec-fetch-site: same-origin<br>
+                            sec-fetch-mode: navigate<br>
+                            sec-fetch-user: ?1<br>
+                            sec-fetch-dest: document<br>
+                            referer: https://websniffer.cc/<br>
+                            accept-language: en<br>
+                            cookie: _ga=GA1.2.1421472328.1653040803; _gid=GA1.2.910720344.1653040803; <br>__gads=ID=7c78dc47a635d005-223f847a99cd00de:T=1653040801:RT=1653040801:S=ALNI_MYc4G8r2y6H60uVRdDWZsPre3a0TQ; __gpi=UID=0000068328d13e43:T=1653040801:RT=1653198473:S=ALNI_Ma-7tQsjHF3K1Qc2WRK3ZRO0d337A; __cf_bm=qJrHIU2KQSJBWY_wmENkGd76IA5T_5L2xTIte0CkWn0-1653209183-0-AUKK0NyXvuCYTHVW01d69T9JQa5GrgAR+tztoiMbSYbMHLABWlrHmLC7vaDkyJqNtWUjuC4Pd74WTMmKgOoidUU5M3RNLJ3HaN/Et0iziZ7WG4H8IuZ11XKaHNNe7lGKkA==; _gat_gtag_UA_20572145_2=1
+                            CF-Connecting-IP: 212.34.251.66<br>
+                            CDN-Loop: cloudflare<br>
+                        </p>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/Map-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -52,13 +54,97 @@
                     <form>
                         <div class="row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="url" placeholder="Enter domain name..."></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit">Lookup</button></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit" id="hero3">Lookup</button></div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </header>
+
+
+<section id="scrollpoint3"></section>
+    <section class="hidden-section" id="section3">
+        <div class="hidden-content">
+            
+            <h3 class="hidden-title">Lookup of example.com</h3>
+            <div class="hidden-container">
+                <div class="color-box">
+                    <h4>Associated IPv4 Addresses:</h4>
+                    <p class="lead mb-0">    
+                    172.67.203.135<br>
+                    104.21.85.77<br>
+                    </p>
+
+                    <h4>Associated IPv6 Addresses:</h4>
+                    <p class="lead mb-0">    
+                    2606:4700:3035::6815:554d<br>
+                    2606:4700:3034::ac43:cb87<br>
+                </p>
+                    
+                    <h4>Nameservers:</h4>
+                    <p class="lead mb-0">
+                    april.ns.cloudflare.com<br>
+                    piotr.ns.cloudflare.com<br>
+                    </p>
+
+                    <h4>Mail Exchanger Records:</h4>
+                    <p class="lead mb-0">    
+                    aspmx4.googlemail.com, priority: 30<br>
+                    aspmx3.googlemail.com, priority: 30<br>
+                    aspmx2.googlemail.com, priority: 30<br>
+                    alt2.aspmx.l.google.com, priority: 20<br>
+                    alt1.aspmx.l.google.com, priority: 20<br>
+                    aspmx.l.google.com, priority: 10<br>
+                    aspmx5.googlemail.com, priority: 30<br>
+                </p>
+                    
+                    <h4>Text Records:</h4>
+                    <p class="lead mb-0">       
+                    ca3-4fcf7f72566845e9bbecda4358a2e8dd<br>
+                    v=spf1 include:_spf.google.com ~all<br>
+                </p>
+                    
+                    <h4>Start of Authority Records:</h4>
+                       <p class="lead mb-0">    
+                    rname: dns.cloudflare.com, mname: april.ns.cloudflare.com, serial: 2274501229<br>
+                </p>
+                    
+                    <h4>CAA Records:</h4>
+<p class="lead mb-0">   
+                    tag: issuewild, value: letsencrypt.org<br>
+                    tag: issuewild, value: comodoca.com<br>
+                    tag: issue, value: pki.goog; cansignhttpexchanges=yes<br>
+                    tag: issue, value: letsencrypt.org<br>
+                    tag: issue, value: comodoca.com<br>
+                    tag: issuewild, value: digicert.com; cansignhttpexchanges=yes<br>
+                    tag: issue, value: digicert.com; cansignhttpexchanges=yes<br>
+                    tag: issuewild, value: pki.goog; cansignhttpexchanges=yes<br>
+                    </p>
+                </div>
+            </div>    
+
+            <h3 class="hidden-title">Other Domain Names</h3>
+            <div class="hidden-container">
+                <div class="color-box">
+                    <p class="lead mb-0">
+                        personalpivots.com<br>
+                        salvosstores.com.au<br>
+                        bakemanproducts.com<br>
+                        throwaway-domain-1234.xyz<br>
+                        billbennett.co.nz<br>
+                        eturbonews.com<br>
+                        metsmerizedonline.com<br>
+                        peerspace.com<br>
+                        begrafenisondernemingstam.nl<br>
+                        inc-news.ru<br>
+                    </p>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
     <section class="text-center bg-light features-icons">
         <div class="container">
             <div class="row">
@@ -184,6 +270,24 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+
+          $("#hero3").click(function(event){
+            event.preventDefault();
+
+            $('html, body').animate({
+                    scrollTop: $("#scrollpoint3").offset().top
+                }, 100);
+
+            $("#section3").slideDown();
+          });
+
+
+        });
+
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,74 @@
+.hidden-section {
+	width: 100%;
+	padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: none;
+}
+.hidden-content {
+	max-width: 1320px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+.hidden-section h3 {
+	color: rgb(0, 123, 255);
+}
+.hidden-section h4 {
+	color: #ffffff;
+	font-size: calc(1rem + 0.3vw);
+}
+.hidden-section h4 + p {
+	margin-bottom: 20px !important;
+}
+.hidden-section table {
+	width: 100%;
+}
+.hidden-section th, 
+.hidden-section td,
+.hidden-section pre {
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.25rem;
+    font-weight: 300;
+	color: #ffffff;
+} 
+.hidden-section pre {
+	padding-bottom: 20px;
+}
+.hidden-container {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.color-box {
+	background-color: #007bff;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 0 0.5rem rgb(0 105 217 / 50%);
+    overflow: hidden;
+    padding: 30px;
+}
+.color-box p { 
+	color: #ffffff;
+}
+.hidden-title {
+	text-align: center;
+}
+/* height */
+.hidden-section pre::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+.hidden-section pre::-webkit-scrollbar-track {
+  background: rgb(0 105 217 / 50%);
+  border-radius: 10px;
+}
+
+/* Handle */
+.hidden-section pre::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.navbar-brand {
+	display: flex;
+    align-items: center;
+}
